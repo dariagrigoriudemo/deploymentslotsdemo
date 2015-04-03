@@ -1,0 +1,39 @@
+﻿@{
+    ViewBag.Title = "Home";
+    var env = System.Configuration.ConfigurationManager.AppSettings["ENV"];
+    var textContent = "<<T.E.X.T.>> :"  ;
+}
+<link href="@Url.Content("~/Content/css/Core.css")" rel="stylesheet" type="text/css" />
+<body class=" page-">
+    @*<header>
+        <div class="wa-content">
+            <h2 class="logo">Azure App Service Web Apps </h2>
+        </div>
+    </header>*@
+    <section class="wa-section">
+        
+        <div class="wa-content wa-notification">
+
+            <div class="wa-content wa-content-divided wa-content-3up">
+                <h2>Web Camps TV Demo : @env</h2>
+                
+            </div>
+
+
+            <div class="wa-content wa-content-divided wa-content-3up">
+                <div class="wa-spacer wa-spacer-2down">
+                    <p>@textContent</p>
+                </div>
+                <div class="wa-spacer wa-spacer-centered">
+                    <img src="~/Content/img/05-dev.png" />
+                </div>
+            </div>
+            <div class="wa-content wa-content-divided wa-content-3up">
+                <div class="wa-spacer wa-spacer-2down">
+                </div>
+                <div class="wa-spacer wa-spacer-centered">
+                   <img src="~/Content/img/Azure Websites.png" height="70" width="70" />
+                </div>
+            </div>
+    </section>
+</body>
